@@ -1,0 +1,11 @@
+name: Juan José Muñoz
+role: AI Engineer
+location: Popayán, Cauca, Colombia
+audience: CMOs and Marketing Leaders
+interests:
+  - AI Agents
+  - Marketing Trends
+  - Content Marketing
+  - Emerging Technologies
+tone_preference: Profesional pero humano, claro y aplicable
+writing_style: Ejecutivo, estructurado, sin redundancias

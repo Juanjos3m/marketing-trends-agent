@@ -1,0 +1,57 @@
+research_task:
+  description: >
+    Investiga a profundidad las tendencias más relevantes en {topic} para 2024–2025, con un enfoque global
+    dirigido a CMOs y líderes de marketing. Identifica entre 8 y 12 tendencias clave, explica su relevancia actual
+    y proyecta su impacto futuro. Incluye divergencias entre fuentes, cifras cuantitativas y aplicaciones en distintos mercados.
+  expected_output: >
+    Documento en lista con 8–12 tendencias.
+    Cada tendencia debe contener:
+    - Nombre de la tendencia
+    - Explicación clara (mínimo 3 párrafos)
+    - Datos cuantitativos (cifras, estudios, porcentajes)
+    - Diferencias entre lo que predicen al menos 2 fuentes
+    - Ejemplo aplicado a un mercado global y a un mercado emergente (ej. LATAM, APAC, África)
+    - Quick win (acción inmediata)
+    - Fuente citada con enlace
+  agent: research
+
+reporting_task:
+  description: >
+    Convierte la investigación recibida en un artículo estratégico y creativo en español, 
+    redactado como si fuera publicado en una revista de negocios para CMOs y líderes de marketing.
+    El artículo debe expandir cada tendencia con:
+    - Un análisis estratégico profundo (¿por qué importa? ¿qué riesgos implica?)
+    - Ejemplos aplicados en mercados globales y, cuando sea relevante, LATAM
+    - Quick wins prácticos y KPIs sugeridos
+    - Recomendaciones de corto, mediano y largo plazo
+    Además, utiliza un tono narrativo que enganche, con storytelling breve y claro.
+  expected_output: >
+    Un artículo completo en formato Markdown, con al menos 1200 palabras.
+    La estructura debe incluir:
+    - Introducción estratégica con gancho narrativo
+    - Secciones detalladas para cada tendencia (con ejemplos, KPIs y quick wins)
+    - Checklist accionable
+    - Roadmap sugerido (corto, mediano y largo plazo)
+    - Conclusión inspiradora con llamados a la acción
+    - Fuentes citadas
+  agent: writer
+
+editing_task:
+  description: >
+    Revisa, edita y optimiza el artículo borrador generado en la tarea anterior.
+    Debes asegurarte de que el texto sea claro, fluido y profesional,
+    con una estructura coherente y sin redundancias.
+    Mejora el estilo de redacción para CMOs y líderes de marketing,
+    refuerza ejemplos, resalta quick wins y valida que todas las fuentes estén citadas correctamente.
+    También debes asegurarte de que el artículo cumpla con el mínimo de 1000 palabras
+    y mantenga un tono ejecutivo en español neutro.
+  expected_output: >
+    Un artículo final en formato Markdown optimizado, con:
+    - Introducción clara
+    - Secciones de tendencias con ejemplos y quick wins reforzados
+    - Checklist accionable
+    - Roadmap (corto, mediano y largo plazo)
+    - Conclusión sólida
+    - Fuentes citadas verificadas
+  agent: editor
+  output_file: Artículo_Final.md
