@@ -1,54 +1,37 @@
-# MarketingTrendsAgent Crew
+#  Marketing Trends Agent
 
-Welcome to the MarketingTrendsAgent Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Un proyecto basado en **CrewAI** que investiga, redacta y edita automáticamente un artículo estratégico sobre las últimas tendencias de **Content Marketing (2024–2025)**, utilizando agentes inteligentes y modelos LLM open source.
 
-## Installation
+---
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+##  Descripción
 
-First, if you haven't already, install uv:
+Este proyecto implementa un **flujo de tres agentes** que trabajan de forma colaborativa:
 
-```bash
+1. **Research Agent**  
+   - Investiga rigurosamente las tendencias más recientes en *Content Marketing*.  
+   - Reúne entre 8 y 12 tendencias con ejemplos globales, quick wins y fuentes verificables.
+
+2. **Writer Agent**  
+   - Convierte la investigación en un **artículo estratégico y narrativo** para CMOs y líderes de marketing.  
+   - Redacta en español neutro, con estructura clara (introducción, tendencias, tácticas, checklist, roadmap, conclusión).
+
+3. **Editor Agent**  
+   - Revisa el artículo borrador, lo mejora en claridad, tono y fluidez.  
+   - Asegura que cumpla con el estilo profesional y lo guarda como versión final en `Artículo_Final.md`.
+
+---
+
+##  Instalación
+git clone https://github.com/Juanjos3m/marketing-trends-agent.git
+cd marketing-trends-agent
+python -m venv .venv
+.venv\Scripts\activate
 pip install uv
-```
+uv pip install -e .
+crewai run
 
-Next, navigate to your project directory and install the dependencies:
+---
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
-```
-### Customizing
-
-**Add your `OPENAI_API_KEY` into the `.env` file**
-
-- Modify `src/marketing_trends_agent/config/agents.yaml` to define your agents
-- Modify `src/marketing_trends_agent/config/tasks.yaml` to define your tasks
-- Modify `src/marketing_trends_agent/crew.py` to add your own logic, tools and specific args
-- Modify `src/marketing_trends_agent/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
-
-```bash
-$ crewai run
-```
-
-This command initializes the marketing-trends-agent Crew, assembling the agents and assigning them tasks as defined in your configuration.
-
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
-
-## Understanding Your Crew
-
-The marketing-trends-agent Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
-## Support
-
-For support, questions, or feedback regarding the MarketingTrendsAgent Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
+## 👨 Autor
+Proyecto desarrollado por Juan José Muñoz.
