@@ -23,15 +23,15 @@ Este proyecto implementa un **flujo de tres agentes** que trabajan de forma cola
 ---
 
 ##  Instalación
-git clone https://github.com/Juanjos3m/marketing-trends-agent.git
-cd marketing-trends-agent
-python -m venv .venv
-.venv\Scripts\activate
-pip install uv
-uv pip install -e .
-crewai run
+- git clone https://github.com/Juanjos3m/marketing-trends-agent.git
+- cd marketing-trends-agent
+- python -m venv .venv
+- .venv\Scripts\activate
+- pip install uv
+- uv pip install -e .
+- crewai run
 
 ---
 
-## 👨 Autor
+##  Autor
 Proyecto desarrollado por Juan José Muñoz.
