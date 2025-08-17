@@ -21,3 +21,5 @@ build-backend = "hatchling.build"
 
 [tool.crewai]
 type = "crew"
+entry = "marketing_trends_agent.crew"
+
