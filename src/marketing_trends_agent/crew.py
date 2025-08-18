@@ -61,7 +61,7 @@ class MarketingTrendsAgent():
         """Tarea de edición final del artículo"""
         return Task(
             config=self.tasks_config['editing_task'],
-            output_file='Artículo_Final.md'
+            output_file='Articulo_Final.txt' 
         )
 
     # ----------------------

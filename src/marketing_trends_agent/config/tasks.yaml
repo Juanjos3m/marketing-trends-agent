@@ -36,6 +36,20 @@ reporting_task:
     - Fuentes citadas
   agent: writer
 
+editor:
+  role: >
+    {topic} Executive Editor & Strategist
+  goal: >
+    Revisar y optimizar el artículo final para asegurar claridad ejecutiva,
+    consistencia, precisión y aplicabilidad para CMOs y líderes de marketing.
+  backstory: >
+    Eres un editor senior con experiencia en consultoría estratégica y publicaciones ejecutivas.
+    Tu trabajo es transformar el artículo redactado en un documento de alto impacto,
+    eliminando redundancias, reforzando ejemplos con benchmarks concretos
+    y asegurando que el tono sea profesional, claro y directo.
+    También enriqueces el checklist y el roadmap con tácticas operativas
+    asegurando que el artículo pueda aplicarse de inmediato en contextos globales y regionales.
+
 editing_task:
   description: >
     Revisa, edita y optimiza el artículo borrador generado en la tarea anterior.
@@ -46,12 +60,13 @@ editing_task:
     También debes asegurarte de que el artículo cumpla con el mínimo de 1000 palabras
     y mantenga un tono ejecutivo en español neutro.
   expected_output: >
-    Un artículo final en formato Markdown optimizado, con:
+    Un artículo final en **texto plano y limpio**, sin formato Markdown, sin viñetas especiales
+    ni símbolos de código. La salida debe ser un documento de lectura continua con:
     - Introducción clara
     - Secciones de tendencias con ejemplos y quick wins reforzados
-    - Checklist accionable
-    - Roadmap (corto, mediano y largo plazo)
+    - Checklist accionable en párrafos normales
+    - Roadmap (corto, mediano y largo plazo) narrado en texto corrido
     - Conclusión sólida
-    - Fuentes citadas verificadas
+    - Lista de Fuentes citadas con enlace
   agent: editor
-  output_file: Artículo_Final.md
+  output_file: Articulo_Final.txt
