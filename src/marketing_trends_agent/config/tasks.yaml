@@ -67,6 +67,6 @@ editing_task:
     - Checklist accionable en párrafos normales
     - Roadmap (corto, mediano y largo plazo) narrado en texto corrido
     - Conclusión sólida
-    - Lista de Fuentes citadas con enlace
+    - Lista de Fuentes citadas en formato de lista numerada simple, cada ítem con el texto de la fuente seguido de su enlace
   agent: editor
   output_file: Articulo_Final.txt
